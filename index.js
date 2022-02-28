@@ -1,15 +1,20 @@
-const person = {
-    name: "Matt",
-    age: 40,
-    address: {
-        city: "Sydney",
-        postcode: 2000
-    },
-    score: [15,30,40]
-}
+const arr = ["Matt",48, 4510]
 
-console.log(person.name)
-console.log(person.address.city)
-console.log(person.score[0])
-console.log(person.score[1])
-console.log(person.score[2])
+console.log(arr[1])
+console.log(arr.length)
+console.log(arr.includes("Matt"))
+console.log(arr.includes(10))
+
+arr.push("end")
+console.log(arr)
+arr.unshift("start")
+console.log(arr)
+console.log(arr.pop())
+console.log(arr)
+console.log(arr.shift())
+console.log(arr)
+
+
+const arr2 = [5 ,10 , 15, 30, 40]
+const values = arr.find(element => element > 15)
+console.log(values)
