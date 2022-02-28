@@ -1,13 +1,11 @@
-// FOR
+// Looping over Arrays  => iterations
 
-// for (let i= 0; i <= 10; i++){
-//     console.log(`I'm nuber: ${i}`)
-// }
+// For each
 
-// WHILE
+let numbers = [2, 3, 4]
 
-let i = true;
+numbers.forEach (number => {
+    let myNumber = Math.pow(number, 2)
+    console.log(`the exponent of ${number} is ${myNumber}`)
+})
 
-do {
-console.log (`this is number ${i}`)
-} while (!i)
