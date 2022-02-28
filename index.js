@@ -1,18 +1,6 @@
-// Looping over Arrays  => iterations
+function check (a, x) {
+   return a.includes(x)
+}
 
-// For each
-
-// let numbers = [2, 3, 4]
-
-// numbers.forEach (number => {
-//     let myNumber = Math.pow(number, 2)
-//     console.log(`the exponent of ${number} is ${myNumber}`)
-// })
-
-let numbers = [2,3,4,5]
-
-let newNumbers = numbers.map (number => {
-    return Math.pow(number, 2)
-})
-
-console.log(newNumbers)
+console.log (check ([66, 101], 66))
+console.log (check ([66, 101], 55))
