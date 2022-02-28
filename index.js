@@ -6,9 +6,8 @@
 
 // WHILE
 
-let olympicMedals = 0;
+let i = true;
 
-while (olympicMedals < 10){
-    console.log(`medal: ${olympicMedals}, you won another one!`)
-    olympicMedals++
-}
+do {
+console.log (`this is number ${i}`)
+} while (!i)
