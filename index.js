@@ -1,9 +1,24 @@
-function sum(numbers) {
-    let total = 0
-    for (let i = 0 ; i < numbers.length; i++){
-        total += numbers[i]
+function sumArray(array) {
+    if (!array) {
+        array = []
     }
-    return(total)
+    let sortArray = array.sort(function(a, b) {
+      return a - b;
+    });
+    sortArray.pop()
+    sortArray.shift()
+    let sum = 0
+    for (i=0; i < sortArray.length; i++ ){
+        sum += sortArray[i]
+    }
+    return sum
 }
 
-console.log(sum([1, 5.2, 4, 0, -1]))
+
+console.log(sumArray(null))
+console.log(sumArray([]))
+console.log(sumArray([3]))
+console.log(sumArray([3,5]))
+console.log(sumArray([6,2,1,8,10]))
+console.log(sumArray([ 0, 1, 6, 10, 10 ]))
+console.log(sumArray([ -6, -20, -1, -10, -12 ]))
