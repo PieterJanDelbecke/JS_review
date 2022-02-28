@@ -1,4 +1,11 @@
-let a, b, rest;
+// IF ELSE
 
-[a ,b , ...rest] = [10,20,30,40,50]
-console.log(rest)
+let number = 10
+
+if (number < 10){
+    console.log("number is smaller than 10")
+} else if(number = 10) {
+    console.log("number is equal to 10")
+} else {
+    console.log("number is greater than 10")
+}
