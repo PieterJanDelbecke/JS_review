@@ -1,20 +1,9 @@
-// const arr2 = [5 ,10 , 15, 30, 40]
-// const values = arr2.find(element => element > 15)
-// console.log(values)
+function sum(numbers) {
+    let total = 0
+    for (let i = 0 ; i < numbers.length; i++){
+        total += numbers[i]
+    }
+    return(total)
+}
 
-let myColours =["red", "orange", "yellow", "green"]
-let newColours = ["pink", "purple"]
-let word = "Himalayas are in Nepal"
-let str = " Hello World "
-// console.log(myColours[1].toUpperCase())
-// console.log(word.charAt(2))
-// console.log(word.indexOf("y"))
-// console.log(str.substring(1,3))
-// const newStr = str.trim()
-// console.log(newStr)
-// const myStr = newStr.replace("o","x")
-// console.log(myStr)
-// console.log(myColours.includes("red"))
-// console.log(myColours.includes("blue"))
-let allColours = myColours.concat(newColours)
-console.log(allColours)
+console.log(sum([1, 5.2, 4, 0, -1]))
