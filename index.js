@@ -3,13 +3,18 @@
 // console.log(values)
 
 let myColours =["red", "orange", "yellow", "green"]
+let newColours = ["pink", "purple"]
 let word = "Himalayas are in Nepal"
 let str = " Hello World "
 // console.log(myColours[1].toUpperCase())
 // console.log(word.charAt(2))
 // console.log(word.indexOf("y"))
 // console.log(str.substring(1,3))
-const newStr = str.trim()
-console.log(newStr)
-const myStr = newStr.replace("o","x")
-console.log(myStr)
+// const newStr = str.trim()
+// console.log(newStr)
+// const myStr = newStr.replace("o","x")
+// console.log(myStr)
+// console.log(myColours.includes("red"))
+// console.log(myColours.includes("blue"))
+let allColours = myColours.concat(newColours)
+console.log(allColours)
