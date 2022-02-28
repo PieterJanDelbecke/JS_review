@@ -1,11 +1,18 @@
-// IF ELSE
+// SWITCH
 
-let number = 10
+let number = "twenty"
 
-if (number < 10){
-    console.log("number is smaller than 10")
-} else if(number = 10) {
-    console.log("number is equal to 10")
-} else {
-    console.log("number is greater than 10")
+switch (number){
+    case "one":
+        console.log("number is 1")
+        break
+    case "ten":
+        console.log("number is 10")
+        break
+    case "twenty":
+        console.log("number is 20")
+        break
+    default:
+        console.log("Not a number")
+        break
 }
