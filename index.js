@@ -1,8 +1,15 @@
-function opposite(number){
-    let double = number * 2
-    return number -= double
+function getMiddle(s)
+{
+    let half = Math.floor(s.length/2)
+    let arr = s.split("")
+    if (s.length % 2 === 0){
+        return arr[half-1].concat(arr[half])
+    } else {
+        return arr[half]
+    }
 }
 
-console.log(opposite(1))
-console.log(opposite(14))
-console.log(opposite(-34))
+console.log(getMiddle("test"))
+console.log(getMiddle("testing"))
+console.log(getMiddle("middle"))
+console.log(getMiddle("A"))
