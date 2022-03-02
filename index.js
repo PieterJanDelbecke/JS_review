@@ -1,6 +1,8 @@
-function check (a, x) {
-   return a.includes(x)
+function opposite(number){
+    let double = number * 2
+    return number -= double
 }
 
-console.log (check ([66, 101], 66))
-console.log (check ([66, 101], 55))
+console.log(opposite(1))
+console.log(opposite(14))
+console.log(opposite(-34))
