@@ -1,9 +1,9 @@
-//AMONYMOUS FUNCTION
+// fat arrow syntax
 
-//function without a name
+let multiplier = function (x, y) {
+  return x * y;
+};
 
-const myCoolFunction = input => {
-    console.log(input)
-}
+// OR
 
-myCoolFunction("such a cool function")
+let multiplier = (x, y) => x * y;
