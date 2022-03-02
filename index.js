@@ -1,6 +1,12 @@
-// FUNCTIONS
+//VARIABLE ARGUMENTS
 
-function add(x,y){
-    return x+y
+// function myArgs(){
+//     console.log(arguments)
+// }
+// myArgs(1,2,3,4)
+
+function myOtherArgs (x,y, ...args){
+    console.log (x,y,args)
 }
-console.log(add(6,3,6))
+
+myOtherArgs (11,22,33,44,55,66)
