@@ -1,12 +1,9 @@
-//VARIABLE ARGUMENTS
+//AMONYMOUS FUNCTION
 
-// function myArgs(){
-//     console.log(arguments)
-// }
-// myArgs(1,2,3,4)
+//function without a name
 
-function myOtherArgs (x,y, ...args){
-    console.log (x,y,args)
+const myCoolFunction = input => {
+    console.log(input)
 }
 
-myOtherArgs (11,22,33,44,55,66)
+myCoolFunction("such a cool function")
