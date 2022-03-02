@@ -1,5 +1,6 @@
-// FIND()
+// FUNCTIONS
 
-let arr = [2,5,9,20]
-let found = arr.find(element => element > 8)
-console.log(found)
+function add(x,y){
+    return x+y
+}
+console.log(add(6,3,6))
