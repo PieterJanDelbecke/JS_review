@@ -1,13 +1,12 @@
-//nested functions and closure
+// CLOSURES
 
-// => allows us to declare a function within a function
-
-function parentFunc(a){
-    let b=1
-    function nestedFunction(a,b){
-        return a+b
+function makeAdder(a){
+    return function(b){
+        return a + b
     }
-    return nestedFunction(a,b)
 }
-let answer = parentFunc(10)
-console.log(answer)
+let addFive = makeAdder(5)
+let addTen = makeAdder(10)
+
+console.log(addFive(6))
+console.log(addTen(13))
