@@ -1,12 +1,7 @@
-// CLOSURES
+//Match() with a regular expression
 
-function makeAdder(a){
-    return function(b){
-        return a + b
-    }
-}
-let addFive = makeAdder(5)
-let addTen = makeAdder(10)
+const paragraph = 'The quick A brown 1 3 7 & % $ 4'
+const regex = /\S/g
+const found = paragraph.match(regex)
 
-console.log(addFive(6))
-console.log(addTen(13))
+console.log(found)
