@@ -1,7 +1,8 @@
-//Match() with a regular expression
+function getCount(str) {
+  let regex = /[a,e,i,o,u]/g;
+  let found = str.match(regex);
+  return !found ? 0 : found.length;
+}
 
-const paragraph = 'The quick A brown 1 3 7 & % $ 4'
-const regex = /\S/g
-const found = paragraph.match(regex)
-
-console.log(found)
+console.log(getCount("abracadabra"));
+console.log(getCount("my pyx"));
