@@ -1,7 +1,5 @@
-// SORT
+// FIND()
 
-let arr = [1,10,100,2,20,200,3,30,300]
-
-console.log(
-    arr.sort((a,b)=> a - b)
-)
+let arr = [2,5,9,20]
+let found = arr.find(element => element > 8)
+console.log(found)
