@@ -1,19 +1,11 @@
-// OBJECTS AND PROTOTYPES
+// Object constructors
 
-// OBJECT
-
-let student = {
-    name:"michelle",
-    age:20,
-    address: {
-        street: '123 apha street',
-        state: "NSW",
-        city: "sydney"
-    }
+function Person(name,age){
+    this.name = name
+    this.age = age
+    this.awesome = true
 }
 
-console.log("age: ", student.age)
-console.log("city: ", student.address.city)
+let instructor = new Person ("Janel", 25)
 
-student.address.city = "Melbourne"
-console.log("student: ", student)
+console.log(instructor.age)
