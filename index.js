@@ -1,11 +1,14 @@
-function squareDigits(num){
-    let newNum = num.toString().split('')
-    let arr = newNum.map(item =>{
-        return Math.pow(parseInt(item),2)
-    })
-    return parseInt(arr.join(''))
-}
+// function myOtherArgs (a, b, ...args){
+//     console.log("a: ",a)
+//     console.log("b: ",b)
+//     console.log("args: ",args)
 
-console.log(squareDigits(3212))
-console.log(squareDigits(2112))
-console.log(squareDigits(0))
+// }
+
+// myOtherArgs(10,20,30,40,50)
+
+let a,b, rest
+[a,b,...rest]=[10,20,30,40,50]
+console.log("a: ",a)
+console.log("b: ",b)
+console.log("rest: ",rest)
