@@ -1,8 +1,5 @@
-function getCount(str) {
-  let regex = /[a,e,i,o,u]/g;
-  let found = str.match(regex);
-  return !found ? 0 : found.length;
-}
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
+  }
 
-console.log(getCount("abracadabra"));
-console.log(getCount("my pyx"));
+  console.log(disemvowel("Hello, World"))
