@@ -1,14 +1,19 @@
-// function myOtherArgs (a, b, ...args){
-//     console.log("a: ",a)
-//     console.log("b: ",b)
-//     console.log("args: ",args)
+// OBJECTS AND PROTOTYPES
 
-// }
+// OBJECT
 
-// myOtherArgs(10,20,30,40,50)
+let student = {
+    name:"michelle",
+    age:20,
+    address: {
+        street: '123 apha street',
+        state: "NSW",
+        city: "sydney"
+    }
+}
 
-let a,b, rest
-[a,b,...rest]=[10,20,30,40,50]
-console.log("a: ",a)
-console.log("b: ",b)
-console.log("rest: ",rest)
+console.log("age: ", student.age)
+console.log("city: ", student.address.city)
+
+student.address.city = "Melbourne"
+console.log("student: ", student)
