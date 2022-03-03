@@ -1,18 +1,16 @@
-// Object constructors
+// Codewars
 
-function Person(name, age){
-    this.name = name
-    this.age = age
-    // this.shout = function(){
-    //     return `My name is ${this.name} and I'm ${age} years`
-    // }
+function sum(num, ...args){
+    if (args === []){
+        return num
+    } else {
+        args.forEach(item =>{
+            num += item
+        })
+        return num
+    }
 }
-Person.prototype.shout = function(){
-    return`my name is ${this.name} and I'm ${this.age}`
-}
-Person.prototype.role = "student"
-let person1 = new Person("Pete", 40)
 
-console.log(person1)
-console.log(person1.shout())
-console.log(person1.role)
+console.log(sum(1,2,3,4,5,6,7))
+console.log(sum(1))
+console.log(sum(12, 1, 1, 1, 1, 1, 1))
