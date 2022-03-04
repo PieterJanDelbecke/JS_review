@@ -1,14 +1,7 @@
 // Codewars
 
-function sum(num, ...args){
-    if (args === []){
-        return num
-    } else {
-        args.forEach(item =>{
-            num += item
-        })
-        return num
-    }
+function sum(...args){
+return args.reduce((a,b) => a+b)
 }
 
 console.log(sum(1,2,3,4,5,6,7))
