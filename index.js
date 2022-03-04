@@ -1,9 +1,21 @@
 // Codewars
 
-function sum(...args){
-return args.reduce((a,b) => a+b)
+function DNAstrand(dna){
+    newArr =dna.split("").map(letter =>{
+        switch(letter){
+        case "A":
+            return "T"
+        case "T":
+            return "A"
+        case "G":
+            return "C"
+        case "C":
+            return "G"
+        default:
+            return " "
+        }
+    })
+    return newArr.join("")
 }
 
-console.log(sum(1,2,3,4,5,6,7))
-console.log(sum(1))
-console.log(sum(12, 1, 1, 1, 1, 1, 1))
+console.log(DNAstrand("ATTGC"))
