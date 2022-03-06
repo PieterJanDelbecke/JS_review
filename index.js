@@ -1,7 +1,13 @@
 // Codewars
- function disemvowel(str){
-    regex = /[auio]/gi
-    return str.replace(regex, "")
- }
+function nbYear(p0, percent, aug, p){
+    let inhabitants = p0
+    count = 0
+    while (inhabitants <= p) {
+        inhabitants = inhabitants + ((inhabitants * percent) / 100) + aug
+        count++
+    }
+    return count
+}
 
- console.log(disemvowel("This website is for losers LOL!"))
+console.log(nbYear(1500, 5,100,5000))
+console.log(nbYear(1500000, 2.5,10000,2000000))
