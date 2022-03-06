@@ -1,7 +1,15 @@
 // Codewars
- function divisableByThree(str){
-    str = str.split("").map(num => Number(num)).reduce((a,b)=> a + b)
-    return str % 3 === 0 ? true : false
- }
+ 
+let numberStore= [ 0,1,2]
+let newNumber = 12
+console.log(numberStore = [...numberStore, newNumber])
 
- console.log(divisableByThree('123'))
+let person = {
+    firstName: 'Pieter-Jan',
+    lastName: 'Delbecke'
+}
+// let address = city: 'Sydney'
+
+person = { ...person, firstName: 'Bart'}
+
+console.log(person)
