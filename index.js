@@ -1,7 +1,7 @@
 // Codewars
+ function disemvowel(str){
+    regex = /[auio]/gi
+    return str.replace(regex, "")
+ }
 
-function friend(friends){
-        return friends.filter(name =>  name.length == 4)
-}
-
-console.log(friend(["Ryan", "Kieran", "Mark"]))
+ console.log(disemvowel("This website is for losers LOL!"))
