@@ -1,6 +1,7 @@
-// Codewars
- 
-let num = ['zero','one', 'two', 'three', 'four']
-num.forEach((e, index)=>{
-    console.log(`${e} is index: ${index}`)
-})
+// CALLBACKS
+
+// reduce 
+
+let arr = [2,3,4]
+arr= arr.reduce((a,b)=> Math.pow(a,b))
+console.log(arr)
