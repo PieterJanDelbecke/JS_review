@@ -1,6 +1,8 @@
-function filter_list(l){
- return l.filter(e => typeof e === 'number')
+function sequence(x){
+    arr = []
+    for (let i = 0; i < x; i++){
+        arr= [...arr, i+1]
+    }
+    return arr.sort()
 }
-
-console.log(filter_list([1,2,'a','b']))
-console.log(filter_list([1,2,'aasf','1','123',123]))
+console.log(sequence(16))
