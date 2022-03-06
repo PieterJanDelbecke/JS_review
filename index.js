@@ -1,21 +1,7 @@
 // Codewars
 
-function DNAstrand(dna){
-    newArr =dna.split("").map(letter =>{
-        switch(letter){
-        case "A":
-            return "T"
-        case "T":
-            return "A"
-        case "G":
-            return "C"
-        case "C":
-            return "G"
-        default:
-            return " "
-        }
-    })
-    return newArr.join("")
+function friend(friends){
+        return friends.filter(name =>  name.length == 4)
 }
 
-console.log(DNAstrand("ATTGC"))
+console.log(friend(["Ryan", "Kieran", "Mark"]))
