@@ -1,13 +1,7 @@
 // Codewars
-function nbYear(p0, percent, aug, p){
-    let inhabitants = p0
-    count = 0
-    while (inhabitants <= p) {
-        inhabitants = inhabitants + ((inhabitants * percent) / 100) + aug
-        count++
-    }
-    return count
-}
+ function divisableByThree(str){
+    str = str.split("").map(num => Number(num)).reduce((a,b)=> a + b)
+    return str % 3 === 0 ? true : false
+ }
 
-console.log(nbYear(1500, 5,100,5000))
-console.log(nbYear(1500000, 2.5,10000,2000000))
+ console.log(divisableByThree('123'))
