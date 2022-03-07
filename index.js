@@ -1,23 +1,6 @@
 function XO(str){
-    let arr = str.split("")
-    let x = 0, y = 0, num =0
-    arr = arr.map((e) => {
-       e = e.toLowerCase()
-       if (e === 'x'){
-        num++
-        x++
-       } else if (e === 'o'){
-           num++
-           y++
-       }
-    })
-    if (num === 0){
-        return true
-    } else if (x === y){
-        return true
-    } else {
-        return false
-    }
+ str = str.toLowerCase().split('')
+ return str.filter(e => e === 'x').length === str.filter( e => e === 'o').length
 }
 
 console.log(XO('xo'))
