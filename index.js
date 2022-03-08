@@ -1,37 +1,39 @@
-// Promesis
+// Promise chaining
 
-// setTimeout(() => { console.log("One")}, 1000)
-// console.log("two")
+function generateRandomNumber(limit) {
+  console.log("Generating number between 1 - " + limit);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (typeof limit !== "number") {
+        reject(new Error("Input must be a number"));
+      }
+      const randomNumber = Math.floor(Math.random() * limit) + 1;
+      resolve(randomNumber);
+    }, 1000);
+  });
+}
 
-// .then
-// .catch
-// .finally
-
-//has immutable statud => pending / reolved / rejected
-
-// let myFirstPromise = Promise.resolve("My first promise, yay!")
-//     myFirstPromise.then((value) => {console.log( value + "!!!")})
-
-// let myFirstRejection = Promise.reject("Oh no, error!")
-//     myFirstRejection.catch(reason => console.error(reason))
-
-function squareNumber(number) {
-    return new Promise((resolve,reject) => {
-        if (typeof number !== "number"){
-            reject(new Error("Input must be a number"))
+function doubleNumber(num){
+    return new Promise ((resolve, reject) => {
+        if (num < 0){
+            reject(new Error("Can't be negative"))
         }
-        resolve (number * number)
+        resolve(num *2)
     })
 }
 
-// squareNumber("a")
-// .then(squaredNumber => console.log("The squared number is" + squaredNumber))
-// .catch(error => console.log(error.message))
-// .finally(()=> console.log("The promise has finished"))
+function logIfSmall(num){
+    if (num > 15){
+        throw new Error("That number is too big")
+    } 
+    console.log("The doubled number is " + num )
+}
 
-// OR
-
-let squaredNumber = squareNumber("a")
-squaredNumber
-    .then( number => console.log(number))
-    .catch(error => console.log("Error: " + error.message))
+generateRandomNumber(8)
+    .then(number => {
+        console.log("The number is " + number)
+        return number
+    })
+    .then(doubleNumber)
+    .then(logIfSmall)
+    .catch( error => console.error ("Caught error: " + error.message))
