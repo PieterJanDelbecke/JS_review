@@ -1,11 +1,13 @@
-// Promise.all()
+// CODEWARS
 
-const promise1 = Promise.resolve(3)
-const promise2 = 42
-const promise3 = new Promise ((resolve, reject) => {
-    setTimeout(resolve,1000,'foo')
-})
+function evaporator(content, evap_per_day, threshold){
+    let total = 0
+    threshold = (content/100)*threshold
+    while (content >= threshold){
+        content -= content * (evap_per_day/100)
+        total++
+    }
+    return total
+}
 
-Promise.all([promise3, promise1, promise2]).then((values) => {
-    console.log(values)
-})
+console.log(evaporator(10,10,10))
