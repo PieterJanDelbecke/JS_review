@@ -1,13 +1,10 @@
 // CODEWARS
 
-function evaporator(content, evap_per_day, threshold){
-    let total = 0
-    threshold = (content/100)*threshold
-    while (content >= threshold){
-        content -= content * (evap_per_day/100)
-        total++
-    }
-    return total
+String.prototype.toJadenCase = function (){
+    return this.split(" ").map( e => {
+        e = e.split("")
+        return [e[0].toUpperCase(), ...e.splice(1, e.length)].join("")
+    }).join(" ")
 }
 
-console.log(evaporator(10,10,10))
+console.log(jadenCase("How can mirrors be real if our eyes aren't real"))
