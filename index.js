@@ -1,10 +1,14 @@
-// Object constructor
+// Classses
 
-function Person (name, age) {
-    this.name = name
-    this.age = age
-    this.awesome = true
+class Rectangle {
+    constructor (width, height){
+        this.width = width
+        this.height = height
+    }
+    area(){
+        return this.height * this.width
+    }
 }
 
-let instructor = new Person("Pieter-Jan", 25)
-console.log(instructor.name)
+let rect = new Rectangle(10,5)
+console.log(rect.area())
