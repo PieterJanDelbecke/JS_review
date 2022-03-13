@@ -1,15 +1,10 @@
-// fizbuzz
+// Object constructor
 
-for (let i = 0; i <= 100 ; i++){
-    let three = ""
-    let five = ""
-    if (i % 3 === 0) {
-        three = "Fizz"
-    }
-    if (i % 5 === 0){
-        five = "Buzz"
-    }
-    if (three || five){
-        console.log(`${i}: `, three + five)
-    }
+function Person (name, age) {
+    this.name = name
+    this.age = age
+    this.awesome = true
 }
+
+let instructor = new Person("Pieter-Jan", 25)
+console.log(instructor.name)
