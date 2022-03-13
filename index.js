@@ -1,10 +1,15 @@
-// CODEWARS
+// fizbuzz
 
-String.prototype.toJadenCase = function (){
-    return this.split(" ").map( e => {
-        e = e.split("")
-        return [e[0].toUpperCase(), ...e.splice(1, e.length)].join("")
-    }).join(" ")
+for (let i = 0; i <= 100 ; i++){
+    let three = ""
+    let five = ""
+    if (i % 3 === 0) {
+        three = "Fizz"
+    }
+    if (i % 5 === 0){
+        five = "Buzz"
+    }
+    if (three || five){
+        console.log(`${i}: `, three + five)
+    }
 }
-
-console.log(jadenCase("How can mirrors be real if our eyes aren't real"))
