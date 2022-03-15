@@ -1,14 +1,15 @@
-// Object.keys()
+// Object.entries()
 
-const object1 = { a: 'something', b: 42, c: false }
+const object1 = { a: 10, b: 42, c: 50 }
 
-const keys =  Object.keys(object1)
-const values = Object.values(object1)
+const arr = []
 
-console.log(keys)
-console.log(values)
-
-for (const property in object1){
-    console.log(`${property} is ${object1[property]}`)
+for (const [key, value] of Object.entries(object1)){
+    if (value > 20 ){
+        arr.push ({
+            newKey: value
+        })
+    }
 }
 
+console.log(arr)
