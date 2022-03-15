@@ -1,14 +1,7 @@
-// Classses
+const object1 ={ a:1, b:2, c:3}
 
-class Rectangle {
-    constructor (width, height){
-        this.width = width
-        this.height = height
-    }
-    area(){
-        return this.height * this.width
-    }
-}
+// for(const property in object){
+//     console.log(`${property} : ${object[property]}`)
+// }
 
-let rect = new Rectangle(10,5)
-console.log(rect.area())
+console.log(Object.values(object1))
