@@ -1,18 +1,7 @@
-function getSum(a, b) {
-  let total = 0;
-    if (a < b){
-        for (let i = a ; i <= b; i++) {
-          total += i;
-        }
-    } else {
-        for (let i)
-    }
-
-  return total
+function filter_list(l) {
+  return l.filter((num) => typeof num === "number");
 }
 
-console.log(getSum(0, 1))
-console.log("---------")
-console.log(getSum(1, 2))
-console.log("---------")
-console.log(getSum(-1, 2))
+console.log(filter_list([1, 2, "a", "b"]));
+console.log(filter_list([1,'a','b',0,15]));
+console.log(filter_list([1,2,'aasf','1','123',123]));
