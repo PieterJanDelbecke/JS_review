@@ -1,5 +1,10 @@
-function filterLongWords(sentence, n){
-    return sentence.split(" ").filter(word => word.length > n)
+function capitalize(s) {
+  return s
+    .split("")
+    .map((e, index) => {
+      return index % 2 === 0 ? e.toUpperCase() : e;
+    })
+    .join("");
 }
 
-console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4))
+console.log(capitalize("abcdef"));
