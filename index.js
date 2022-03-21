@@ -1,7 +1,5 @@
-function filter_list(l) {
-  return l.filter((num) => typeof num === "number");
+function filterLongWords(sentence, n){
+    return sentence.split(" ").filter(word => word.length > n)
 }
 
-console.log(filter_list([1, 2, "a", "b"]));
-console.log(filter_list([1,'a','b',0,15]));
-console.log(filter_list([1,2,'aasf','1','123',123]));
+console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4))
