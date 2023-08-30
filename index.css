@@ -1,1 +1,37 @@
+.primary {
+  color: red;
+}
 
+#secondary {
+  color: green;
+}
+
+.third:hover {
+  color: blue;
+}
+
+.begin::before {
+  content: "<<";
+  color: pink;
+}
+
+.end::after {
+  content: ">>";
+  color: orange;
+}
+
+.box {
+  border: 1px solid red;
+  width: 100vw;
+  height: 200px;
+}
+
+.first {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.second {
+}
