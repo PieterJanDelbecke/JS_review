@@ -1,37 +1,30 @@
-.primary {
-  color: red;
-}
-
-#secondary {
-  color: green;
-}
-
-.third:hover {
-  color: blue;
-}
-
-.begin::before {
-  content: "<<";
-  color: pink;
-}
-
-.end::after {
-  content: ">>";
-  color: orange;
+.header {
+  border: 1px solid red;
 }
 
 .box {
-  border: 1px solid red;
-  width: 100vw;
-  height: 200px;
-}
-
-.first {
   border: 1px solid black;
-  width: 200px;
-  padding: 10px;
+  width: 100px;
+  height: 100px;
   margin: 10px;
+  padding: 5px;
+  text-align: center;
 }
 
-.second {
+.one {
+  background-color: yellow;
+}
+
+.two {
+  position: absolute;
+  background-color: orange;
+  left: 100px;
+}
+
+.three {
+  background-color: aqua;
+}
+
+.four {
+  background-color: pink;
 }
