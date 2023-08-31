@@ -1,3 +1,7 @@
+body {
+  font-family: "Phudu", cursive;
+}
+
 .header {
   border: 1px solid red;
 }
@@ -13,10 +17,11 @@
 
 .one {
   background-color: yellow;
+  margin: 5 auto;
 }
 
 .two {
-  position: absolute;
+  /* position: absolute; */
   background-color: orange;
   left: 100px;
 }
@@ -26,5 +31,6 @@
 }
 
 .four {
+  font-family: "Rubik Iso", cursive;
   background-color: pink;
 }
